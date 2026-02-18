@@ -1,0 +1,88 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAIA STUDIOS | Digital Excellence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000; /* Tiefschwarz */
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 6rem); /* Skaliert mit der Bildschirmgröße */
+            font-weight: 900;
+            letter-spacing: -3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .dot {
+            color: #39FF14; /* Das markante Neon-Grün */
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666; /* Subtiles Grau */
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .contact-link {
+            display: inline-block;
+            padding: 12px 35px;
+            border: 1px solid #333;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            border-color: #39FF14;
+            color: #39FF14;
+            background-color: rgba(57, 255, 20, 0.05);
+            transform: translateY(-2px);
+        }
+
+        /* Subtiler Hintergrund-Effekt */
+        .glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(57, 255, 20, 0.05) 0%, rgba(0,0,0,0) 70%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="container">
+        <h1>GAIA<span class="dot">.</span>STUDIOS</h1>
+        <p>Digital Development</p>
+        <a href="mailto:develop@gaiastudios.pro" class="contact-link">Get in touch</a>
+    </div>
+</body>
+</html>
